@@ -1,0 +1,151 @@
+.hero-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    z-index: 999;
+}
+
+.hero-img-mobile {
+    display: none;
+}
+
+.hero-img-desktop {
+    display: block;
+}
+
+.hero-container p {
+    width: 100%;
+}
+
+.hero-container h1 {
+    width: 450px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 48px;
+    letter-spacing: -0.15px;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-description p {
+    width: 450px;
+}
+
+.section-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.circle  {
+    overflow:hidden;
+    display:block;
+    position: absolute;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    -khtml-border-radius: 50%;
+    background: rgba(238, 238, 238, 0);
+    border: 95px solid rgba(255, 255, 255, 0.06);
+    padding:180px;
+}
+
+.desktop-img {
+    display: block;
+}
+
+.mobile-img {
+    display: none;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .circle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        width: 390px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-description {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-container h1 {
+        text-align: center;
+        font-size: 2.5em;
+        max-width: 390px;
+        height: 100%;
+    }
+
+    .hero-description p {
+        text-align: center;
+        width: 350px;
+        height: 100%;
+    }
+
+    .hero-img-mobile {
+        display: block;
+        width: 400px;
+    }
+
+    .hero-img-desktop {
+        display: none;
+    }
+
+    .section-description {
+        padding: 1em;
+    }
+
+    .section-description-title {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-description h2 {
+        width: 100%;
+        height: 100%;
+        font-size: 2em;
+    }
+
+    .section-description p {
+        width: 100%;
+        height: 100%;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        max-width: 420px;
+        width: 100%;
+    }
+}

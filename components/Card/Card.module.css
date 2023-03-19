@@ -1,0 +1,92 @@
+.card {
+    position: relative;
+    margin: 1.25em;
+}
+
+.card .icon {
+   position:inherit;
+    width: 322px;
+    height: 172px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.7s;
+    z-index: 1;
+
+}
+
+.card .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.card .card__face {
+    width: 322px;
+}
+
+.card .card__face__recto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(0px);
+}
+
+.card:hover .card__face__recto {
+    transform: translateY(0px);
+}
+
+.card .card__face__recto .card__content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.card:hover .card__face__recto .card__content {
+    opacity: 1;
+}
+
+.card .card__face__recto .card__content i{
+    max-width: 100px;
+}
+
+.card .card__face__verso {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 322px;
+    height: 160px;
+    box-shadow: 0px 5px 15px #00000026;
+    border-radius: 5px;
+    transform: translateY(0px);
+}
+
+.card:hover .card__face__verso{
+    transform: translateY(0);
+}
+
+.card .card__face__verso .card__content p {
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+    color: #414141;
+    letter-spacing: 0.08px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card .card__face__verso .card__content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-align:justify;
+    color:  #0E5FE3;
+}
